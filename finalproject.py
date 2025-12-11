@@ -5,10 +5,7 @@ Created on Mon Dec  1 15:28:33 2025
 @author: simps
 """
 
-# choice survival game- you can go either to the woods, river, castle or desert 
-
-
-
+# this section creates classes for the the program
 class Player:
     def __init__(self):
         self.health = 100
@@ -47,7 +44,7 @@ class Room:
             except ValueError:
                 print(" Enter a number.")
 
-
+# the puzzle code
 def puzzle_math(player):
     print("\nPuzzle: Solve this to continue!")
     a, b = 10, 3
@@ -62,7 +59,7 @@ def puzzle_math(player):
         player.lose_health(100)
         return False
 
-
+# this creates the rooms
 def create_rooms(player):
     return {
         "Woods": Room(
@@ -121,7 +118,7 @@ def create_rooms(player):
         ),
     }
 
-
+# this are the working parts of the code
 def game():
     player = Player()
     rooms = create_rooms(player)
