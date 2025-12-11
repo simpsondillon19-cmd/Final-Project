@@ -5,7 +5,7 @@ Created on Mon Dec  1 15:28:33 2025
 @author: simps
 """
 
-# this section creates classes for the the program
+# this section creates classes for player and rooms in the program
 class Player:
     def __init__(self):
         self.health = 100
